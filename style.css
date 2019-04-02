@@ -177,6 +177,15 @@ ul{
     padding-right: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(85, 51, 255);
+}
+
+a:hover, a:active {
+    color: rgb(10, 1s0, 255);
+}
+
 .nav a{
     text-decoration: none;
     color: #fff;
@@ -231,7 +240,7 @@ Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 
 .site {
-    max-width: 50em;
+    /*max-width: 50em;*/
     margin: 0 auto;
     padding: 0 2em;
 }
@@ -247,7 +256,7 @@ CSS Grid layout for modern browsers:
         .site {
             max-width: none;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            /*grid-template-columns: 1fr 1fr;*/
             padding: 0;
             justify-content: center;
             grid-template-areas:
@@ -400,6 +409,7 @@ CSS Grid layout for modern browsers:
         }
         .colophon{
             grid-area:colophon;
+            padding-bottom: 2em;
         }
         .siteNav{
             display: flex;
@@ -417,7 +427,7 @@ Extra large view to complete later:
     @media screen and (min-width: 90em) {
 
         .site {
-            grid-template-columns: 30em 30em;
+            /*grid-template-columns: 30em 30em;*/
             justify-content: center;
         }
 
